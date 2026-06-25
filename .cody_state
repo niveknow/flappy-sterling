@@ -1,0 +1,45 @@
+# .cody_state — Flappy Sterling (HTML5 Web)
+
+## Current Project Focus
+Flappy Sterling — MVP Core Engine (Browser Playable)
+
+## Project Path
+/opt/data/projects/flappy-sterling/ (accessible as /project/flappy-sterling/ inside sub-agent containers)
+
+## Active Container Ports / Networks
+- Dev server: http://localhost:8082 (serving src/ directory)
+
+## Pending Pipeline Blockers
+- None — ready for Trixie testing
+
+## Explicit Completed Milestones
+- [x] Project directory created (src/, assets/, tests/uat/, docs/architecture/)
+- [x] Git repo initialized (main branch)
+- [x] GitHub remote set: origin https://github.com/niveknow/flappy-sterling.git
+- [x] sprint_plan.md initialized — 7 requirements, 7 test cases
+- [x] README.md written with architecture overview
+- [x] index.html — canvas shell with viewport meta, responsive sizing
+- [x] game.js — requestAnimationFrame loop, state machine, collision detection, background/ground rendering
+- [x] bird.js — gravity (0.4/frame), flap impulse (-7), rotation animation, procedural rendering
+- [x] pipes.js — generation at intervals, scrolling (2px/frame), gap sizing (140px), despawning
+- [x] score.js — on-screen display, high score via localStorage
+- [x] audio.js — procedural Web Audio API (flap, score, hit)
+- [x] Dev server running on port 8082
+- [x] All game source committed to git
+- [x] Trixie dual-pass testing: 7/7 PASS (100%)
+- [x] Promoted to REGRESSION_SUITE.md (SPRINT 1 established)
+- [x] GitHub Pages deployment workflow configured (.github/workflows/pages.yml)
+
+## Next Actions
+1. ~~Push to GitHub~~ ✅ DONE — pushed to github.com/niveknow/flappy-sterling
+2. Enable GitHub Pages in repo Settings → Pages → Source: GitHub Actions
+3. Share link: https://niveknow.github.io/flappy-sterling/
+4. Tune difficulty (pipe gap, scroll speed, gravity) based on playtesting feedback
+5. Phase 2: Wrap as iOS app via WKWebView for iPhone
+
+## Architecture Notes
+- Pure HTML5 Canvas — no frameworks, no dependencies
+- All rendering is procedural (no sprite sheets)
+- Delta-time based physics for consistent speed across frame rates
+- pointerdown event unified for touch + mouse
+- Target: Chrome desktop + iPhone Safari
