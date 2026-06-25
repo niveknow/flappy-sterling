@@ -14,19 +14,23 @@ A Flappy Bird clone built with HTML5 Canvas and JavaScript — playable in any m
 - **Controls:** Touch (tap) + Mouse (click) — dual input binding
 - **Audio:** Web Audio API (procedural sound effects, no external files)
 - **Persistence:** `localStorage` for high score tracking
+- **Hosting:** GitHub Pages (auto-deployed via Actions)
+
+## Play It
+
+**→ https://niveknow.github.io/flappy-sterling/**
+
+Tap to fly. Score by passing pipes. Try to beat your high score.
 
 ## Architecture
 
 ```
-src/
-├── index.html          # Shell page with canvas + meta tags
-├── game.js             # Main game loop, state machine, orchestration
-├── bird.js             # Bird entity — physics, flap, rotation
-├── pipes.js            # Pipe pair generation, scrolling, despawning
-├── score.js            # Score display, high score persistence
-└── audio.js            # Procedural sound effects (flap, score, hit)
-assets/
-└── (all procedural — no external assets needed)
+index.html          # Shell page with canvas + meta tags
+game.js             # Main game loop, state machine, orchestration
+bird.js             # Bird entity — physics, flap, rotation
+pipes.js            # Pipe pair generation, scrolling, despawning
+score.js            # Score display, high score persistence
+audio.js            # Procedural sound effects (flap, score, hit)
 ```
 
 ## Game States

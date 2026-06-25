@@ -26,11 +26,16 @@ Flappy Sterling — MVP Core Engine (Browser Playable)
 - [x] audio.js — procedural Web Audio API (flap, score, hit)
 - [x] Dev server running on port 8082
 - [x] All game source committed to git
+- [x] Trixie dual-pass testing: 7/7 PASS (100%)
+- [x] Promoted to REGRESSION_SUITE.md (SPRINT 1 established)
+- [x] GitHub Pages deployment workflow configured (.github/workflows/pages.yml)
 
 ## Next Actions
-1. Trixie: dual-pass testing (delta + regression) on local build
-2. Deploy to GitHub Pages or ship for user testing
-3. Wrap as iOS app via WKWebView (Phase 2)
+1. ~~Push to GitHub~~ ✅ DONE — pushed to github.com/niveknow/flappy-sterling
+2. Enable GitHub Pages in repo Settings → Pages → Source: GitHub Actions
+3. Share link: https://niveknow.github.io/flappy-sterling/
+4. Tune difficulty (pipe gap, scroll speed, gravity) based on playtesting feedback
+5. Phase 2: Wrap as iOS app via WKWebView for iPhone
 
 ## Architecture Notes
 - Pure HTML5 Canvas — no frameworks, no dependencies
