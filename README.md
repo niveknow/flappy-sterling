@@ -1,58 +1,92 @@
-# Flappy Sterling
+# 🐦 FLAPPY STERLING — FLY WITH YOUR FACE! 🎮
 
-A Flappy Bird clone built with HTML5 Canvas and JavaScript — playable in any modern web browser. Target: iPhone Safari via responsive touch controls.
+[![▶️ PLAY NOW](https://img.shields.io/badge/▶️_PLAY_NOW-ffcc00?style=for-the-badge&logo=github&logoColor=black)](https://niveknow.github.io/flappy-sterling/)
+[![Star ⭐](https://img.shields.io/badge/⭐_Star_This_Repo-333?style=for-the-badge)](https://github.com/niveknow/flappy-sterling)
 
-## Prerelease Build
+**👉 [CLICK HERE TO FLY!](https://niveknow.github.io/flappy-sterling/)** 👈
 
-> **Hosted at:** `http://localhost:8082` (local dev server)
-> **Status:** MVP in active development
+---
 
-## Tech Stack
+## HEY STERLING! 👋
 
-- **Runtime:** HTML5 Canvas + Vanilla JavaScript (no frameworks)
-- **Rendering:** 2D Canvas API at 60 FPS via `requestAnimationFrame`
-- **Controls:** Touch (tap) + Mouse (click) — dual input binding
-- **Audio:** Web Audio API (procedural sound effects, no external files)
-- **Persistence:** `localStorage` for high score tracking
-- **Hosting:** GitHub Pages (auto-deployed via Actions)
+This is **YOU** — but as a bird flying through the sky dodging pipes!
 
-## Play It
+Your face is the BIRD. Tap to flap. Don't crash. It's THAT simple. 😎
 
-**→ https://niveknow.github.io/flappy-sterling/**
+---
 
-Tap to fly. Score by passing pipes. Try to beat your high score.
+## 🎯 WHAT IS THIS?
 
-## Architecture
+It's Flappy Bird — but instead of a boring yellow bird, **STERLING'S FACE** flies through the clouds! 🦅✨
+
+**The mission:** Fly as far as you can without hitting the pipes. Every pipe you pass = 1 point. Try to beat your high score!
+
+---
+
+## 🎮 HOW TO PLAY
 
 ```
-index.html          # Shell page with canvas + meta tags
-game.js             # Main game loop, state machine, orchestration
-bird.js             # Bird entity — physics, flap, rotation
-pipes.js            # Pipe pair generation, scrolling, despawning
-score.js            # Score display, high score persistence
-audio.js            # Procedural sound effects (flap, score, hit)
+📱 iPhone  → Tap anywhere to flap!
+🖱️ Desktop → Click or press Spacebar to flap!
 ```
 
-## Game States
+- **Tap harder = flap higher** 🚀
+- **Score a point** every time you squeeze through a pair of pipes
+- **Hit a pipe or the ground** = GAME OVER
+- Your **high score** saves automatically in your browser!
 
-| State | Behaviour |
-|-------|-----------|
-| **START** | Title screen. Bird bobs in centre. "Tap to Start" prompt. |
-| **PLAYING** | Active physics loop. Bird falls under gravity. Tap to flap. Pipes scroll from right. Score increments on pipe pass. |
-| **GAME_OVER** | Bird falls off screen. Score + high score displayed. "Tap to Restart" prompt. |
+---
 
-## Controls
+## 🏆 What's Inside
 
-- **Desktop:** Click or Spacebar
-- **Mobile:** Tap anywhere on the canvas
-- Latency: Sub-frame on `pointerdown` / `touchstart` events
+| Feature | What It Does |
+|---------|:------------:|
+| 😱 **Sterling's face** as the bird | It's YOU flying! |
+| 🎵 **Sound effects** | Flaps, scoring dings, crash sounds — all synthesized! |
+| 💾 **High score save** | Local storage remembers your best run |
+| 🔄 **Instant restart** | Tap again = try again, no waiting |
+| 📱 **iPhone ready** | Touch controls work perfectly on your phone |
 
-## Development
+---
 
-```bash
-# Serve locally
-python3 -m http.server 8082 --directory src/
+## 🕹️ MADE BY
 
-# Open in browser
-open http://localhost:8082
+**Tom Nguyen** made this **for Sterling** 🤓
+
+Built with vanilla JavaScript on HTML5 Canvas — no game engine, no shortcuts, just pure code. Your face is rendered from an actual photo clipped into a circle!
+
+---
+
+## 🤓 The Nerdy Stuff
+
+| What | How |
+|------|:---:|
+| Language | JavaScript (vanilla) |
+| Graphics | HTML5 Canvas 2D |
+| Sound | Web Audio API (all synth, no files) |
+| Bird Avatar | 🧒 Sterling's face! |
+| Hosting | GitHub Pages 🚀 |
+| Framerate | 60 FPS via `requestAnimationFrame` |
+
+**Files:**
 ```
+📁 flappy-sterling/
+├── 📄 index.html    ← The game
+├── 📄 game.js       ← Game loop & rules
+├── 📄 bird.js       ← Sterling's flappy physics
+├── 📄 pipes.js      ← Pipe spawning & scrolling
+├── 📄 score.js      ← Points, high score
+├── 📄 audio.js      ← Beeps, boops & crashes
+├── 📁 assets/       ← Sterling's face picture
+└── 📁 .github/      ← Auto-deploy wizardry
+```
+
+---
+
+### 🎉 FUN FACT
+
+This was the **FIRST** game made for Sterling. The bird that flies through pipes is literally Sterling's face. So Sterling is doing ALL the flying. Talk about a pro gamer! 💪😄
+
+---
+
+*FLY HIGH, STERLING! DODGE THOSE PIPES!* 🐦💨💥
